@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0f766e;
+  --primary-dark: #115e59;
+  --accent: #f59e0b;
+  --dark: #0f172a;
+  --light: #f8fafc;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--dark);
+    color: var(--light);
+  }
+}
